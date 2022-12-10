@@ -5,13 +5,14 @@ set(CMAKE_CXX_STANDARD 17)
 
 set(IGLOO_PATH ${CMAKE_SOURCE_DIR}/external/igloo)
 
-include_directories(square_n_sum src/square_n_sum)
-include_directories(igloo ${IGLOO_PATH})
+set(SOURCE_PATH ${CMAKE_SOURCE_DIR}/src)
 
-add_executable(codewars
-        src/square_n_sum/square_n_sum.cpp
-        src/square_n_sum/square_n_sum.h)
+include_directories(${SOURCE_PATH}/multiply)
+include_directories(${SOURCE_PATH}/square_n_sum)
+include_directories(${IGLOO_PATH})
 
-add_executable(codewars-test
-        tests/main.cpp
-        tests/test_square_n_sum.cpp)
+file(GLOB TEST_FILES CONFIGURE_DEPENDS "tests/*.cpp")
+file(GLOB SRC_FILES CONFIGURE_DEPENDS "src/**/*.cpp" "src/**/*.h")
+
+add_executable(codewars ${SRC_FILES})
+add_executable(codewars-test ${TEST_FILES})
