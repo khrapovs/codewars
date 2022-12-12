@@ -5,12 +5,6 @@
 
 using namespace std;
 
-int square_sum(const vector<int>& numbers)
-{
-    int out {};
-    for (int num: numbers)
-        out += num*num;
-    return out;
-}
+int square_sum(const vector<int> &numbers);
 
 #endif //CODEWARS_SQUARE_N_SUM_H
