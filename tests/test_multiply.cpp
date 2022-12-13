@@ -1,5 +1,5 @@
 #include "igloo/igloo_alt.h"
-#include "multiply.h"
+#include "002_multiply/multiply.h"
 
 using namespace igloo;
 

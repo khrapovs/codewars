@@ -2,7 +2,7 @@
 #define CODEWARS_MAIN_H
 
 #include <string>
-#include "reversed_strings.h"
+#include "003_reversed_strings/reversed_strings.h"
 
 using namespace std;
 
