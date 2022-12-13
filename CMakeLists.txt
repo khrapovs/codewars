@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.24)
+
 project(codewars)
 
 set(CMAKE_CXX_STANDARD 17)
 
-set(IGLOO_PATH ${CMAKE_SOURCE_DIR}/external/igloo)
-
+set(IGLOO_PATH igloo)
 set(SOURCE_PATH ${CMAKE_SOURCE_DIR}/src)
 
 include_directories(${SOURCE_PATH})
