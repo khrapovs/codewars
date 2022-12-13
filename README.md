@@ -5,5 +5,5 @@
 Depends on [Igloo](https://github.com/joakimkarlsson/igloo). To install, run
 
 ```shell
-sh setup.sh
+./setup.sh
 ```
