@@ -3,7 +3,7 @@
 #include <algorithm>
 
 #include "igloo/igloo_alt.h"
-#include "reversed_strings.h"
+#include "003_reversed_strings/reversed_strings.h"
 
 using namespace std;
 using namespace igloo;

@@ -1,6 +1,6 @@
 #include <random>
 #include "igloo/igloo_alt.h"
-#include "square_n_sum.h"
+#include "001_square_n_sum/square_n_sum.h"
 
 using namespace igloo;
 

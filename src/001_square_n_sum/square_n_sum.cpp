@@ -1,5 +1,5 @@
 #include <vector>
-#include "square_n_sum.h"
+#include "001_square_n_sum/square_n_sum.h"
 
 using namespace std;
 

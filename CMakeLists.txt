@@ -7,9 +7,7 @@ set(IGLOO_PATH ${CMAKE_SOURCE_DIR}/external/igloo)
 
 set(SOURCE_PATH ${CMAKE_SOURCE_DIR}/src)
 
-include_directories(${SOURCE_PATH}/multiply)
-include_directories(${SOURCE_PATH}/square_n_sum)
-include_directories(${SOURCE_PATH}/reversed_strings)
+include_directories(${SOURCE_PATH})
 include_directories(${IGLOO_PATH})
 
 file(GLOB TEST_FILES CONFIGURE_DEPENDS tests/*.cpp src/**/*.cpp)
