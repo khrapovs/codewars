@@ -11,8 +11,7 @@ include_directories(${SOURCE_PATH})
 include_directories(${IGLOO_PATH})
 
 file(GLOB TEST_FILES CONFIGURE_DEPENDS tests/*.cpp src/**/*.cpp)
-#file(GLOB SRC_FILES CONFIGURE_DEPENDS "src/**/*.cpp" "src/**/*.h")
 
-#add_executable(codewars ${SRC_FILES})
-#add_executable(reversed-strings src/reversed_strings/reversed_strings.cpp)
+add_executable(even-or-odd scripts/even_or_odd.cpp src/004_even_or_odd/even_or_odd.cpp)
+
 add_executable(codewars-test ${TEST_FILES})
