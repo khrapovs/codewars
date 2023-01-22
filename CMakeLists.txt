@@ -12,6 +12,6 @@ include_directories(${IGLOO_PATH})
 
 file(GLOB TEST_FILES CONFIGURE_DEPENDS tests/*.cpp src/**/*.cpp)
 
-add_executable(even-or-odd scripts/even_or_odd.cpp src/004_even_or_odd/even_or_odd.cpp)
+add_executable(run scripts/run.cpp src/012_roman_numerals_decoder/roman_numerals_decoder.cpp)
 
 add_executable(codewars-test ${TEST_FILES})
