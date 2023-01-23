@@ -15,29 +15,13 @@ int solution(string roman) {
             {'M', 1000}
     };
 
-    vector<int> numbers = {};
-    for (char letter: roman) {
-        numbers.push_back(roman_to_int[letter]);
-    }
-
-    int out = 0;
-    int temp;
-
-    for (int i = 0; i < numbers.size(); ++i) {
-        temp = 0;
-        if (i + 1 == numbers.size()) {
-            temp += numbers[i];
+    int total = 0;
+    for (int i = 0; i < roman.length(); i++) {
+        if (roman_to_int[roman[i]] >= roman_to_int[roman[i + 1]]) {
+            total += roman_to_int[roman[i]];
         } else {
-            for (int j = i; j < numbers.size(); ++j) {
-                if (j + 1 < numbers.size()) {
-                    if (numbers[j] >= numbers[j + 1]) {
-                        temp += numbers[j];
-                        break;
-                    } else { temp -= numbers[j]; }
-                }
-            }
+            total -= roman_to_int[roman[i]];
         }
-        out += temp;
     }
-    return out;
+    return total;
 }
